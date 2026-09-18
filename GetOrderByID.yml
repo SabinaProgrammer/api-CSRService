@@ -1,0 +1,413 @@
+info:
+  name: GetOrderByID
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://119.63.68.56:10080/api/v1/Mendix/Order/GetOrder
+  body:
+    type: json
+    data: "{\r
+
+      \"OrderID\" :\"TTJ251118141\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3ODkxMDUzNTIsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.KdyFRflihYJELhqjbl93Td1ykM-Z8gg8cRkse36Tuk4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
+
+examples:
+  - name: GetOrderByID
+    request:
+      url: http://apptest.sabina.co.th:10080/api/v1/Mendix/Order/GetOrder
+      method: POST
+      body:
+        type: json
+        data: "{\r
+
+          \"OrderID\" :\"LD241115001\"\r
+
+          }"
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Encoding
+          value: gzip
+        - name: Vary
+          value: Accept-Encoding
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Wed, 27 Nov 2024 01:59:31 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "orderNo": "LD241115001",
+              "orderDate": "2024-11-15T00:00:00",
+              "customerID": "002021",
+              "customerName": "002021 Line@ KBANK",
+              "posid": "002021",
+              "netTotal": 900,
+              "orderDetail": [
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-05-17T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-11-12T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-02-14T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-02-17T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-04-04T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-11-22T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-06-06T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-09-10T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-01-26T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-02-06T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-11-22T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "สาย 5",
+                      "maxreceivE_DATE": "2023-02-22T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-05-31T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-02-02T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2024-09-12T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-04-29T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-04-29T00:00:00"
+                  },
+                  {
+                      "productID": "SBXA9216BKA32",
+                      "lineNum": 0,
+                      "qty": 3,
+                      "fullPrice": 990,
+                      "netPrice": 900,
+                      "styleno": "SBXA9216",
+                      "color": "BK",
+                      "cup": "A",
+                      "size": "32",
+                      "price": 990,
+                      "barcodecustomer": "8852263436346",
+                      "producttype": "B",
+                      "collectionid": "00100002",
+                      "subcollectionid": "001000020621",
+                      "collectionName": "A-Doomm Doomm",
+                      "factorY_NAME": "ชัยนาท",
+                      "maxreceivE_DATE": "2023-05-26T00:00:00"
+                  }
+              ],
+              "orderType": "ONLINE",
+              "mB_ID": "OT395797"
+          }

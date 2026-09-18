@@ -1,0 +1,22 @@
+info:
+  name: Request-GetOrderByCaseNo
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: http://apptest.sabina.co.th:10080/api/v1/ReqeustForSample/PatternRequest/GetData/ByCaseNo?Caseno=CAS000114
+  params:
+    - name: Caseno
+      value: CAS000114
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkFFTU9PTl9TIiwiZXhwIjoxNzM5MzUyMjUwLCJpc3MiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIiwiYXVkIjoic2JucG9zLnNhYmluYS5jby50aCJ9._LVSiV5j3uOzTUwYF-gxOWvfSTGqj5gc9GrzSr4Ipkk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

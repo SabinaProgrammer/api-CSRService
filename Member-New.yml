@@ -1,0 +1,52 @@
+info:
+  name: Member-New
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://apptest.sabina.co.th:10080/api/v1/members/saveNewMember?CustomerID=002896
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: CustomerID
+      value: "002896"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \"mB_CreateBy\": \"CHAT\",\r
+
+      \"mB_FirstName\": \"pari\",\r
+
+      \"mB_LastName\": \"test\",\r
+
+      \"mB_INITADDRESS\": \"11\",\r
+
+      \"mB_ISUSE_GROUPADDRESS\": true,\r
+
+      \"mB_MOBILE\": \"0936855644\",\r
+
+      \"mB_PROVINCE\": \"กรุงเทพมหานคร\",\r
+
+      \"mB_SUBDISTRICT\": \"bkk\",\r
+
+      \"mB_ZIPCODE\": \"10700\",\r
+
+      \"mB_DISTRICT\": \"บางกอกน้อย\",\r
+
+      \"mT_TypeID\": \"S\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3MzQ2ODcxODgsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.R9jp47K5-bUoYa6L5HbN29AqZNPzMOJRPV9-cTx0Agw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

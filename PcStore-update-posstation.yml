@@ -1,0 +1,39 @@
+info:
+  name: PcStore/update/posstation
+  type: http
+  seq: 25
+
+http:
+  method: POST
+  url: http://119.63.68.56:10080/api/v1/PcStore/update/posstation
+  body:
+    type: json
+    data: "{\r
+
+      \    \"customerid\": \"001074\",\r
+
+      \    \"addresS_PREADDRESS\": \"71 หมู่ 5\",\r
+
+      \    \"addresS_PCMOBILE\": \"0910357268\",\r
+
+      \    \"addresS_ROAD\": \"\",\r
+
+      \    \"addresS_SUBDISTRICT\": \"ในเมือง\",\r
+
+      \    \"addresS_DISTRICT\": \"เมืองยโสธร\",\r
+
+      \    \"addresS_PROVINCE\": \"ยโสธร\",\r
+
+      \    \"addresS_ZIPCODE\": \"35000\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3NTEwMjc5MTUsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.9Drma4QnTFXP3anxcLnOwGSKClW176lS4CkeTRDd_pU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

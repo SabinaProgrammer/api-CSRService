@@ -1,0 +1,149 @@
+info:
+  name: OC-Save
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: http://192.168.5.30:10080/api/v1/od
+  body:
+    type: json
+    data: "{\r
+
+      \r
+
+      \"sabina_Club_No\":\"OD000001\",\r
+
+      \"customer_FirstName\":\"Pari\",\r
+
+      \"customer_LastName\":\"Taworn\",\r
+
+      \"customer_IDCARD\":\"1849800126903\",\r
+
+      \"customer_Street\":\"\",\r
+
+      \"customer_Apartment_Building_Floor_Room_Suite\":\"511/795\",\r
+
+      \"customer_City\":\"Test\",\r
+
+      \"customer_SubDistrict\":\"Test\",\r
+
+      \"customer_State_territory_province_other\":\"Test\",\r
+
+      \"customer_ZIP_Postal_Code\":\"10700\",\r
+
+      \"customer_PhoneNo\":\"0936855644\",\r
+
+      \"customer_EmailAddress\":\"parichat_t@sabina.co.th\",\r
+
+      \"shipTo_FirstName\":\"Test\",\r
+
+      \"shipTo_LastName\":\"Test\",\r
+
+      \"shipTo_Street\":\"\",\r
+
+      \"shipTo_Apartment_Building_Floor_Room_Suite\":\"511\",\r
+
+      \"shipTo_City\":\"Test\",\r
+
+      \"shipTo_SubDistrict\":\"Test\",\r
+
+      \"shipTo_State_territory_province_other\":\"Test\",\r
+
+      \"shipTo_ZIP_Postal_Code\":\"10700\",\r
+
+      \"shipTo_PhoneNo\":\"0936855644\",\r
+
+      \"delivery_type\":\"EMS\", /*get payment_Method*/\r
+
+      \"createuser\":\"CHAT\",\r
+
+      \"customerid\":\"002896\", /*get payment_Method*/\r
+
+      \"posid\":\"002896\", /*get payment_Method*/\r
+
+      \"remark\":\"it test\",\r
+
+      \"discountontoP_PMID\":\"\",\r
+
+      \"discountontop\":0,\r
+
+      \"special_Discount1_THB\":0, \r
+
+      \"special_Discount1_Promotion_Name\":\"\",\r
+
+      \"payment_Method\":\"CSS\", /*config*/\r
+
+      \"shipping_Cost_THB\":50, /*ค่าขนส่ง*/\r
+
+      \"ispaid\": \"N\", /*config*/\r
+
+      \"ISAPPROVE\": \"N\", /*config*/\r
+
+      \"DIFFVALUEDOCREF\":\"SPS251100009\", /*new OrderNo*/\r
+
+      \"DIFFVALUE\":100, /*new ค่าส่วนต่าง*/\r
+
+      \"OrderConfirmationDetail\":[\r
+
+      \        {\r
+
+      \                \"productid\": \"SUZM4901CD5XL\",\r
+
+      \                \"full_Style_No\": \"SUZM4901CD5XL\",\r
+
+      \                \"quantity\": 1,\r
+
+      \                \"unit_Price_THB\": 0,\r
+
+      \                \"isfree\": \"Y\", /*config*/\r
+
+      \                \"linenum\": 1,\r
+
+      \                \"linenum_dtref\": 1,\r
+
+      \                \"service_note\":\"บริการเสริม รายละเอียด : ตัดความยาวลำตัว (อื่นๆ) ความยาวเดิม 36 ความยาวใหม่ 34ลูกค้าต้องการบริการเสริม **เพิ่มเติม** ยังไม่ได้ตัดป้าย/ยังไม่ได้ใช้งาน\"\r
+
+      \r
+
+      \        },\r
+
+      \         {\r
+
+      \                \"productid\": \"SUZM4901CL5XL\",\r
+
+      \                \"full_Style_No\": \"SUZM4901CL5XL\",\r
+
+      \                \"quantity\": 1,\r
+
+      \                \"unit_Price_THB\": 0,\r
+
+      \                \"isfree\": \"Y\", /*config*/\r
+
+      \                \"linenum\": 1,\r
+
+      \                \"linenum_dtref\": 1,\r
+
+      \                \"service_note\":\"บริการเสริม รายละเอียด : ตัดความยาวลำตัว (อื่นๆ) ความยาวเดิม 36 ความยาวใหม่ 34ลูกค้าต้องการบริการเสริม **เพิ่มเติม** ยังไม่ได้ตัดป้าย/ยังไม่ได้ใช้งาน\"\r
+
+      \r
+
+      \r
+
+      \        }\r
+
+      \r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3NjQ4MzM3MDcsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.drtDjtyXVHU2jICMn2cHWWsdQKsMCQuQjHD3bXaO7YU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,85 @@
+info:
+  name: Getpayment_Method
+  type: http
+  seq: 18
+
+http:
+  method: GET
+  url: http://apptest.sabina.co.th:10080/api/v1/postalcode/getpayment?id=CSS
+  params:
+    - name: id
+      value: CSS
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3MzQwOTU2NTgsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.dVD9evuVUycxoZNnJ65qOFDYlCnz_HmS2S593w0wVw8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
+
+examples:
+  - name: payment_Method-Get
+    request:
+      url: http://demo.sabina.co.th/api/v1/postalcode/getpayment?id=CSS
+      method: GET
+      params:
+        - name: id
+          value: CSS
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Thu, 14 Nov 2024 06:31:46 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "payment_Method": "CSS",
+              "customerID": "002896",
+              "invoiceType": "NON",
+              "customerType": "CNS",
+              "shortname": "CSR",
+              "location": "Service",
+              "n_line": "NSR",
+              "iV_type": "IN",
+              "delivery_type": "EMS",
+              "sendToWebService": null,
+              "createuser": "CHATCHAI",
+              "createdate": "2024-11-05T00:00:00",
+              "checkPOSTALCODE": "Y",
+              "status": "A",
+              "apiusage": null,
+              "apistartdate": null,
+              "apishipusage": null,
+              "apishipstartdate": null,
+              "checkfieldcount": 3,
+              "orderfield": null,
+              "usemanaulorder": true,
+              "serieused": "CSS",
+              "packpriceauto": null,
+              "isuploadslip": false,
+              "encryptionstartdate": "2024-03-15T00:00:00",
+              "isencryption": "Y",
+              "havecaseno": false,
+              "havelinepaycode": false,
+              "usemapaddr": false,
+              "updateuser": null,
+              "updatedate": null,
+              "canceluser": null,
+              "canceldate": null,
+              "canusediscountcode": false
+          }

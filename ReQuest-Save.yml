@@ -1,0 +1,73 @@
+info:
+  name: ReQuest-Save
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://apptest.sabina.co.th:10080/api/v1/ReqeustForSample/PatternRequest/Save
+  body:
+    type: json
+    data: "{\r
+
+      \    \"PATTERNHD_CREATEUSER\" : \"CHAT\",\r
+
+      \    \"PATTERNHD_EXTENSION_CUSTOMER\" : \"CHAT\",\r
+
+      \    \"PATTERNHD_PROGRAMNO\" : \"CAS000041\",\r
+
+      \    \"PATTERNDetail\" : [{\r
+
+      \  \t\"StyleNo\": \"SBO1206\",\r
+
+      \t\"Color\": \"CD\",\r
+
+      \t\"Cup\": \"B\",\r
+
+      \t\"Size\": \"38\",\r
+
+      \t\"ServiceQty\": \"1\",\r
+
+      \ \t\"ServiceNote\": \"#1.  บริการเสริม รายละเอียด : เย็บกระเป๋าหน้าเต้าด้านขวาของผู้สวมใส่   **เพิ่มเติม** ยังไม่ได้ตัดป้าย/ยังไม่ได้ใช้งาน (ผลิต 30/08/2024 โรงงานยโสธร ผลิตเอง) \"\r
+
+      }, {\r
+
+      \  \t\"StyleNo\": \"SBO1206\",\r
+
+      \t\"Color\": \"SD\",\r
+
+      \t\"Cup\": \"B\",\r
+
+      \t\"Size\": \"38\",\r
+
+      \t\"ServiceQty\": \"1\",\r
+
+      \ \t\"ServiceNote\": \"#1.  บริการเสริม รายละเอียด : เย็บกระเป๋าหน้าเต้าด้านขวาของผู้สวมใส่   **เพิ่มเติม** ยังไม่ได้ตัดป้าย/ยังไม่ได้ใช้งาน (ผลิต 31/07/2024 โรงงานยโสธร ผลิตเอง)  \"\r
+
+      }, {\r
+
+      \  \t\"StyleNo\": \"SBO1206\",\r
+
+      \t\"Color\": \"SD\",\r
+
+      \t\"Cup\": \"B\",\r
+
+      \t\"Size\": \"38\",\r
+
+      \t\"ServiceQty\": \"2\",\r
+
+      \ \t\"ServiceNote\": \"#1.  บริการเสริม รายละเอียด : เย็บกระเป๋าหน้าเต้าด้านขวาของผู้สวมใส่   **เพิ่มเติม** ยังไม่ได้ตัดป้าย/ยังไม่ได้ใช้งาน (ผลิต 31/07/2024 โรงงานยโสธร ผลิตเอง)  \"\r
+
+      }]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkFFTU9PTl9TIiwiZXhwIjoxNzQwMDIzNjc3LCJpc3MiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIiwiYXVkIjoic2JucG9zLnNhYmluYS5jby50aCJ9.c_tSQzisV3RLHoPmEoyBQjxLmSt2CDJcQHJvbD-n_i4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

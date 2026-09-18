@@ -1,0 +1,31 @@
+info:
+  name: ReQuest-UpdateStatus
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://apptest.sabina.co.th:10080/api/v1/ReqeustForSample/PatternRequest/UpdateStatus
+  body:
+    type: json
+    data: "{\r
+
+      \    \"RQNO\":\"RFS25020016\",\r
+
+      \    \"CaseNo\":\"001804\",\r
+
+      \    \"TYPE\":\"C\",\r
+
+      \    \"USER\" : \"NOON\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3MzMzODE3OTIsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.w9TM0_tnczAJHxoX5SiaTf74b6pFNhOaZPC1h24Dp0A
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,30 @@
+info:
+  name: https://api.short.io/links
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: https://api.short.io/links
+  headers:
+    - name: authorization
+      value: rB0Z9DEJNzGoGxfM
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \     \"originalURL\":\"http://yourlongdomain.com/yourlonglink\",\r
+
+      \     \"domain\":\"m.sabina.co.th\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

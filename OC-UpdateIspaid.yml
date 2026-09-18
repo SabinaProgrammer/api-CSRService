@@ -1,0 +1,31 @@
+info:
+  name: OC-UpdateIspaid
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: http://119.63.68.56:10080/api/v1/od/updateDS
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Order_Confirmation_No\" : \"ODS004444251000005\",\r
+
+      \t\"approve_Code\" : \"3069450314\", \r
+
+      \t\"edituser\" :\"SYSTEM\",\r
+
+      \t\"grand_Total_THB\" : 764.00\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkFESVNPTl9TIiwiZXhwIjoxNzU5OTA4NDA4LCJpc3MiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIiwiYXVkIjoic2JucG9zLnNhYmluYS5jby50aCJ9.3rL91stNUAGWbpWQ2yr0n0g-de7tB6aRm-_JWQWP8gg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

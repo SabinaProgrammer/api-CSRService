@@ -1,0 +1,57 @@
+info:
+  name: api_send_sms Copy
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: https://api.smsthai.net:7733/api_send_sms.php
+  body:
+    type: json
+    data: "{\r
+
+      \    \"dataSMS\": [\r
+
+      \        {\r
+
+      \        \"username\":\"Sabina_OD\",\r
+
+      \        \"password\":\"9f67adf2b5711bfd85e58e4c723da427\", /*password เข้ารหัส md5*/\r
+
+      \        \"sender\": \"Sabina\", /*config*/\r
+
+      \        \"msisdn\": \"0936855644\",\r
+
+      \        \"msg\": \"SABINA|บริการเสริม มีค่าจัดส่งสินค้ากลับ กรุณาตรวจสอบรายละเอียดก่อนชำระเงิน : [URL]\",  \r
+
+      \        /* https://web.sabina.co.th/SBNADMIN/app/DirectSales/order-payment.php?odid=CSS250500005 /*/\r
+
+      \        \"smstype\": \"sms\"\r
+
+      \        }\r
+
+      \   ],\r
+
+      \ \"ShortURL\": [\r
+
+      \        {\r
+
+      \            /* Encode url ที่ใช้เป็น base64  */\r
+
+      \        \"UrlOriginal\": \"aHR0cHM6Ly9zYm5wb3Muc2FiaW5hLmNvLnRoOjEwNDQzL1NCTkFETUlOL2FwcC9TYWJpbmElNDBob21lL2ludm9pY2UucGhwP29kaWQ9TEQyMjEwMjYwMDI=\",\r
+
+      \        \"ShortcodeLength\": 5\r
+
+      \        }\r
+
+      \    ]\r
+
+      \ }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

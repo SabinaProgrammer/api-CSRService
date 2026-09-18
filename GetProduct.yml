@@ -1,0 +1,25 @@
+info:
+  name: GetProduct
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://119.63.68.56:10080/api/v1/Mendix/Product/GetProductAll
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ProductID\" : \"SYR2102BKFS\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3ODkxMDUzNTIsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.KdyFRflihYJELhqjbl93Td1ykM-Z8gg8cRkse36Tuk4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

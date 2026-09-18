@@ -1,0 +1,47 @@
+info:
+  name: DeliveryType OFF
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: http://119.63.68.56:10080/api/v1/od/update/DeliveryType
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Order_confirmation_No\" : \"OD190B25090003\", /**/\r
+
+      \    \"EDITUSER\" : \"IT\", /*user*/\r
+
+      \    \"delivery_type\" : \"OFF\" ,\r
+
+      \    \"shipTo_FirstName\":\"บริการเสริม ส่งถึงแผนกลูกค้าสัมพันธ์\",\r
+
+      \    \"shipTo_LastName\":\"-\",\r
+
+      \    \"shipTo_Street\":\"อรุณอมรินทร์\",\r
+
+      \    \"shipTo_Apartment_Building_Floor_Room_Suite\":\"บริษัทซาบีน่า ฟาร์อีสท์ จำกัด เลขที่ 12\",\r
+
+      \    \"shipTo_City\":\"กรุงเทพ\",\r
+
+      \    \"shipTo_SubDistrict\":\"อรุณอมรินทร์\",\r
+
+      \    \"shipTo_State_territory_province_other\":\"บางกอกน้อย\",\r
+
+      \    \"shipTo_ZIP_Postal_Code\":\"10700\",\r
+
+      \    \"ShipTo_PhoneNo\":\"024229430\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3NTgxODk4NjQsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.4kajBOQSTts9aPT5reV-_kZ_O5byJtQXdeyVJrXy6Is
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

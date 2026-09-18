@@ -1,0 +1,35 @@
+info:
+  name: Get Login Token
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://119.63.68.56:10080/api/v1/authen
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: Authorization
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \"Id\": \"chat\",\r
+
+      \"Password\": \"is007\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Im1rZHdsYTg5MDM0MS0wOSIsImV4cCI6MTczOTM1MDA3OSwiaXNzIjoiYXBwcG9ydGFsLnNhYmluYS5jby50aCIsImF1ZCI6ImFwcHBvcnRhbC5zYWJpbmEuY28udGgifQ.6dl929A_ZxRYdd6PFdL_n6BHptUzBnfFImVHQQbl5JE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

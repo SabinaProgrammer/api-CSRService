@@ -1,0 +1,47 @@
+info:
+  name: ReQuest-SaveSingleDoc
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://apptest.sabina.co.th:10080/api/v1/ReqeustForSample/PatternRequest/SaveSingleDoc
+  body:
+    type: json
+    data: "{\r
+
+      \    \"PATTERNHD_CREATEUSER\" : \"Admin\",\r
+
+      \    \"PATTERNHD_EXTENSION_CUSTOMER\" : \"Admin\",\r
+
+      \    \"PATTERNHD_PROGRAMNO\" : \"CAS000045\", /*CaseNumber*/\r
+
+      \    \"PATTERNDetail\" : [\r
+
+      \        {\"StyleNo\": \"SBO1206\",\"Color\":\"CM\",\"Cup\":\"B\",\"Size\":\"38\",\r
+
+      \        \"ServiceQty\":1,\"ServiceNote\" : \"กระดุม\"},\r
+
+      \         {\"StyleNo\": \"SBO1206\",\"Color\":\"CD\",\"Cup\":\"B\",\"Size\":\"38\",\r
+
+      \        \"ServiceQty\":1,\"ServiceNote\" : \"กระดุม\"},\r
+
+      \          {\"StyleNo\": \"SBO1206\",\"Color\":\"BK\",\"Cup\":\"B\",\"Size\":\"38\",\r
+
+      \        \"ServiceQty\":1,\"ServiceNote\" : \"กระดุม\"},\r
+
+      \r
+
+      \        ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3MzI2OTM0OTksImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.BmWmHqF29ddXGQuJyp3NCpSPV5j5DjjxNDNkdzLpoks
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

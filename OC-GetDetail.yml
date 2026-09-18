@@ -1,0 +1,269 @@
+info:
+  name: OC-GetDetail
+  type: http
+  seq: 16
+
+http:
+  method: GET
+  url: http://119.63.68.56:10080/api/v1/od?odid=SPS260400002
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE1OTEzNDIyMDksImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.OPjBuaoLiMF_FPHFFVuS9JXhnIQV2yUtwbUdAPM71xw
+      disabled: true
+  params:
+    - name: odid
+      value: SPS260400002
+      type: query
+  body:
+    type: multipart-form
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE3NDkzMTE0NTIsImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.plzKEXjniWCxYHwt2QxXcrri4eYKh3HS_WmdfrKTqKU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
+
+examples:
+  - name: get_OrderComfilrm
+    request:
+      url: http://119.63.68.56:10080/api/v1/od?odid=FB210906003
+      method: GET
+      headers:
+        - name: Authorization
+          value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkNIQVQiLCJleHAiOjE1OTEzNDIyMDksImlzcyI6InNibnBvcy5zYWJpbmEuY28udGgiLCJhdWQiOiJzYm5wb3Muc2FiaW5hLmNvLnRoIn0.OPjBuaoLiMF_FPHFFVuS9JXhnIQV2yUtwbUdAPM71xw
+          disabled: true
+      params:
+        - name: odid
+          value: FB210906003
+          type: query
+      body:
+        type: multipart-form
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Thu, 14 Nov 2024 06:07:48 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "order_Confirmation_No": "FB210906003",
+              "order_Confirmation_Date": "2021-09-06T00:00:00",
+              "order_Confirmation_Time": null,
+              "sabina_Club_No": "OT051657",
+              "customer_FirstName": "คุณฐิตารีย์ ",
+              "customer_Middle_Name": null,
+              "customer_LastName": "กิตติสาร",
+              "customer_IDCARD": "809700023386 ",
+              "customer_Street": "ถนนลาดพร้าว",
+              "customer_Apartment_Building_Floor_Room_Suite": "185/8  มบ. เดอะคอนเนค อัพ3 ซอยลาดพร้าว 126 ",
+              "customer_City": "กรุงเทพ",
+              "customer_Country": "",
+              "customer_SubDistrict": "พลับพลา",
+              "customer_State_territory_province_other": "วังทองหลาง",
+              "customer_ZIP_Postal_Code": "10310",
+              "customer_Country_Code": "",
+              "customer_PhoneNo": "0996391494",
+              "customer_Ext": "",
+              "customer_EmailAddress": "",
+              "shipTo_FirstName": "คุณฐิตารีย์ ",
+              "shipTo_Middle_Name": "",
+              "shipTo_LastName": "กิตติสาร",
+              "shipTo_Street": "ถนนลาดพร้าว",
+              "shipTo_Apartment_Building_Floor_Room_Suite": "185/8  มบ. เดอะคอนเนค อัพ3 ซอยลาดพร้าว 126 ",
+              "shipTo_City": "กรุงเทพ",
+              "shipTo_Country": "",
+              "shipTo_SubDistrict": "พลับพลา",
+              "shipTo_State_territory_province_other": "วังทองหลาง",
+              "shipTo_ZIP_Postal_Code": "10310",
+              "shipTo_Country_Code": "",
+              "shipTo_PhoneNo": "0996391494",
+              "shipTo_Ext": "",
+              "shipTo_EmailAddress": "",
+              "payment_Method": "Facebook",
+              "payment_Type": null,
+              "credit_Card_No": null,
+              "paypal_No": null,
+              "approve_Code": null,
+              "currency": null,
+              "exchange_Rate": null,
+              "total_Vat": null,
+              "total_Vat_THB": null,
+              "subTotal": null,
+              "subTatal_THB": 350,
+              "special_Discount1_Promotion_Name": "",
+              "special_Discount1": 0,
+              "special_Discount1_THB": 0,
+              "special_Discount1_Percent": 0,
+              "special_Discount2_Promotion_Name": "",
+              "special_Discount2": 0,
+              "special_Discount2_THB": 0,
+              "special_Discount2_Percent": 0,
+              "shipping_Cost": null,
+              "shipping_Cost_THB": 50,
+              "grand_Total": null,
+              "grand_Total_THB": 350,
+              "import_Date": null,
+              "sO_Status": null,
+              "iV_Status": null,
+              "iV_Export_Date": null,
+              "iV_Ref": null,
+              "iV_Date": null,
+              "status": "N",
+              "shippedStatus": "Y",
+              "shippedDate": "2021-09-07T18:13:05.393",
+              "createdate": "2021-09-06T15:03:16.443",
+              "createuser": "YOSITA_S",
+              "editdate": "2021-09-06T17:15:51.523",
+              "edituser": "SYSTEM",
+              "customer_Full_Address": null,
+              "delivery_type": "Flash",
+              "branch": null,
+              "iscod": null,
+              "isencryption": null,
+              "premiumfromstylE_NO": null,
+              "ordeR_FLAG": null,
+              "casE_NO": null,
+              "datatotemp": null,
+              "countlabel": null,
+              "marketplacE_ORDERID": null,
+              "trackingno": "TH01411U9QNH7B",
+              "subtrackingno": null,
+              "marketplacE_NOTE": "",
+              "marketplacE_EDITED": null,
+              "marketplacE_VOUCHER": null,
+              "marketplacE_COIN": null,
+              "marketplacE_SELLERVOUCHER": null,
+              "marketplacE_FEE": null,
+              "marketplacE_LOGISTICFEE": null,
+              "marketplacE_SELLERLOGISTIC": null,
+              "marketplacE_CREDITPROMOTION": null,
+              "marketplacE_BATE": null,
+              "marketplacE_VOUCHERCODE": null,
+              "marketplacE_SHIPPINGREBATE": null,
+              "remark": "",
+              "marketplacE_SELLERVOUCHERNAME": null,
+              "marketplacE_SELLERVOUCHERAMOUNT": null,
+              "customerid": "002254",
+              "posid": null,
+              "ispaid": "Y",
+              "saletype": null,
+              "importiv": null,
+              "type": "OC",
+              "buytype": null,
+              "discountontop": null,
+              "discountontoP_PMID": null,
+              "receiptimage": null,
+              "receiptimagE_UPDATETIME": null,
+              "receipT_DATETIME": null,
+              "shiptoposid": null,
+              "canceluser": null,
+              "canceldate": null,
+              "linepaY_CODE": "",
+              "isapprove": null,
+              "isapprovE_DATE": "2021-09-06T17:15:51.523",
+              "isapprovE_USER": null,
+              "roD_ID": null,
+              "canceL_REMARK": null,
+              "poslocation": "FB Office",
+              "forprivilegemobileno": "",
+              "forsendsmsmobileno": "",
+              "totalqty": 3,
+              "mB_FirstName": "คุณฐิตารีย์",
+              "mB_LastName": "กิตติสาร",
+              "ishavesm": true,
+              "orderConfirmationDT_JSON_Response": [
+                  {
+                      "runid": 0,
+                      "order_Confirmation_No": "FB210906003",
+                      "full_Style_No": "SUZM4901CD5XL",
+                      "quantity": 2,
+                      "unit_Price": null,
+                      "unit_Price_THB": 230,
+                      "percent_Total_Discount": 49.13,
+                      "total_Discount": null,
+                      "total_Discount_THB": 226,
+                      "net_Price": null,
+                      "net_Price_THB": 234,
+                      "ref_order": "Aun Aunnie",
+                      "productid": "SUZM4901CD5XL",
+                      "isfree": "N",
+                      "caseno": null,
+                      "ref_order_item": "",
+                      "linenum": 1,
+                      "linenuM_DTREF": 1,
+                      "promotionid": null,
+                      "saleprice": null,
+                      "dspromotionid": null,
+                      "dspromotionname": null,
+                      "productname": "กางเกงชั้นใน",
+                      "barcodecustomer": "8852263395988",
+                      "producT_NAME": "Microfiber กางเกงในทรงเอวสูงปานกลาง - สีเนื้อเข้ม",
+                      "imagE_IMAGE": "[\"http://web.sabina.co.th/files/product/PRD-SUZM4901CD-P-1.jpg\",\"http://web.sabina.co.th/files/product/PRD-SUZM4901CD-P-2.jpg\",\"https://www.sabina.co.th/files/sizechart_image/SIZECHART-2.jpg\"]",
+                      "producT_CUP": "",
+                      "producT_SIZE": "5XL",
+                      "producT_PRICE": 230,
+                      "producT_ATTRIBUTESET": "BRIEF"
+                  },
+                  {
+                      "runid": 0,
+                      "order_Confirmation_No": "FB210906003",
+                      "full_Style_No": "SUZM4901CL5XL",
+                      "quantity": 1,
+                      "unit_Price": null,
+                      "unit_Price_THB": 230,
+                      "percent_Total_Discount": 49.56,
+                      "total_Discount": null,
+                      "total_Discount_THB": 114,
+                      "net_Price": null,
+                      "net_Price_THB": 116,
+                      "ref_order": "Aun Aunnie",
+                      "productid": "SUZM4901CL5XL",
+                      "isfree": "N",
+                      "caseno": null,
+                      "ref_order_item": "",
+                      "linenum": 2,
+                      "linenuM_DTREF": 2,
+                      "promotionid": null,
+                      "saleprice": null,
+                      "dspromotionid": null,
+                      "dspromotionname": null,
+                      "productname": "กางเกงชั้นใน",
+                      "barcodecustomer": "8852263396022",
+                      "producT_NAME": "Microfiber กางเกงในทรงเอวสูงปานกลาง - สีเนื้ออ่อน",
+                      "imagE_IMAGE": "[\"http://web.sabina.co.th/files/product/PRD-SUZM4901CL-P-1.jpg\",\"http://web.sabina.co.th/files/product/PRD-SUZM4901CL-P-2.jpg\",\"https://www.sabina.co.th/files/sizechart_image/SIZECHART-2.jpg\"]",
+                      "producT_CUP": "",
+                      "producT_SIZE": "5XL",
+                      "producT_PRICE": 230,
+                      "producT_ATTRIBUTESET": "BRIEF"
+                  }
+              ],
+              "orderConfirmationPaymentLog_JSON_Response": [
+                  {
+                      "docno": "FB210906003",
+                      "linenum": 1,
+                      "transactiline": 1,
+                      "grandtotal": 400,
+                      "paidamount": 400,
+                      "approvecode": "6230552561",
+                      "approvedate": "2021-09-06T17:15:51.523",
+                      "createuser": "YOSITA_S",
+                      "createdate": "2021-09-06T15:03:16.443",
+                      "transactiontype": null,
+                      "paidbalance": 0
+                  }
+              ]
+          }
